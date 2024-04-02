@@ -8,11 +8,17 @@
 
 //  console.log(book.title);
 
- function Book (title ,author ,pages){
+ function Book (title ,author ,pages ,info){
     this.title = title;
     this.author = author;
     this.pages = pages;
+    this.info = function (){
+        console.log(book.title ,book.author ,book.pages);
+    }
+
  }
 
  const book = new Book ('The Founder', 'Nelson' ,'278 pages');
+
+book.info();
  
