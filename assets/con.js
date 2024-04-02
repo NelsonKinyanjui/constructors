@@ -23,5 +23,8 @@
 console.log(book.info());
 
 console.log(Object.getPrototypeOf(book) ===  Book.prototype);
+
 console.log(book.__proto__ === Book.prototype);
+
+console.log(Object.prototype.hasOwnProperty('valueOf'));
  
