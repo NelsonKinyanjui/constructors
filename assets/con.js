@@ -13,12 +13,12 @@
     this.author = author;
     this.pages = pages;
     this.info = function (){
-        console.log(book.title ,book.author ,book.pages);
+        return `${book.title }, ${book.author }, ${book.pages}`;
     }
 
  }
 
  const book = new Book ('The Founder', 'Nelson' ,'278 pages');
 
-book.info();
+console.log(book.info());
  
