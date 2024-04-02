@@ -21,4 +21,6 @@
  const book = new Book ('The Founder', 'Nelson' ,'278 pages');
 
 console.log(book.info());
+
+console.log(Object.getPrototypeOf(book) ===  Book.prototype);
  
