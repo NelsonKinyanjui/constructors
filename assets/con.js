@@ -8,23 +8,12 @@
 
 //  console.log(book.title);
 
- function Book (title ,author ,pages ,info){
+  function bookBud(title,author,pages,read){
     this.title = title;
     this.author = author;
     this.pages = pages;
-    this.info = function (){
-        return `${book.title }, ${book.author }, ${book.pages}`;
-    }
+    this.read = read;
+  }
 
- }
-
- const book = new Book ('The Founder', 'Nelson' ,'278 pages');
-
-console.log(book.info());
-
-console.log(Object.getPrototypeOf(book) ===  Book.prototype);
-
-console.log(book.__proto__ === Book.prototype);
-
-console.log(Object.prototype.hasOwnProperty('valueOf'));
+  
  
