@@ -8,12 +8,16 @@
 
 //  console.log(book.title);
 
-  function bookBud(title,author,pages,read){
+  function bookBud(title,author,pages,status,info){
     this.title = title;
     this.author = author;
     this.pages = pages;
-    this.read = read;
-  }
+    this.status = status
+    this.info = function (){
+        return `${this.title } by ${this.author } ${this.pages} ${this.status} `;
+    }
 
-  
- 
+}
+const bookBuddy = new bookBud('The Founder','Nelson Kinyanjui','280 pages','read')
+
+console.log(bookBuddy.info());
