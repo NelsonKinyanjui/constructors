@@ -21,3 +21,5 @@
 const bookBuddy = new bookBud('The Founder','Nelson Kinyanjui','280 pages','read')
 
 console.log(bookBuddy.info());
+
+console.log(Object.getPrototypeOf(bookBuddy) === bookBud.prototype);
