@@ -26,4 +26,9 @@ console.log(Object.getPrototypeOf(bookBuddy) === bookBud.prototype);
 
 console.log(bookBuddy.__proto__ === bookBud.prototype);
 
+console.log(bookBuddy.valueOf());
+console.log(Object.prototype.hasOwnProperty('valueOf'));
+
+// Object.setPrototypeOf
+
 // legacy code  bookbuddy[[prototype]]
